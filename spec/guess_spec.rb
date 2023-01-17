@@ -5,13 +5,13 @@ require 'rspec'
 describe Guess do
   let(:guess) { Guess.new }
 
-  describe '.initialize' do
+  describe '#initialize' do
     it 'sets the @init_guess instance variable to 1122' do
       expect(guess.instance_variable_get(:@init_guess)).to eq(1122)
     end
   end
 
-  describe '.create_guess' do
+  describe '#create_guess' do
     context 'when given a feedback hash' do
       it 'eliminates candidates from @candidates based on the feedback' do
         feedback_hash = { correct_positions: 1, wrong_positions: 2 }
