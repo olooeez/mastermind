@@ -4,7 +4,9 @@
 
 This is a simple implementation of the classic board game in which the player tries to guess the correct combination numbers chosen by the computer.
 
-## Running the game
+# Usage
+
+### Running the game
 
 To run the Mastermind game, follow these steps:
 
@@ -28,7 +30,7 @@ ruby bin/mastermind
 
 Or you can use replit to run the program [right here](https://replit.com/@olooeez/mastermind)
 
-## Playing the game
+### Playing the game
 
 To play, just follow the instructions on the command line. The game will ask how many games there will be, to choose between being the code maker or code breaker and then you will create a code or break a code depending on what you chose.
 
