@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 require_relative './feedback'
 
-# Guess Class to Generate Computer Player Guesses
 class Guess
   def initialize
     @init_guess = 1122

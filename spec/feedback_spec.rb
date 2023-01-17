@@ -1,10 +1,7 @@
-# frozen_string_literal: true
-
 require_relative '../lib/feedback'
 
 require 'rspec'
 
-# rubocop:disable Metrics/BlockLength
 describe Feedback do
   describe '.give_feedback' do
     context 'when given correct guess' do
@@ -46,4 +43,3 @@ describe Feedback do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

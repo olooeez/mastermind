@@ -1,9 +1,6 @@
-# frozen_string_literal: true
-
 require_relative '../guess'
 require_relative 'player'
 
-# Human Player Class
 class Computer < Player
   def initialize
     super('T300')

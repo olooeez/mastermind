@@ -1,10 +1,7 @@
-# frozen_string_literal: true
-
 require_relative 'player/computer'
 require_relative 'player/human'
 require_relative 'feedback'
 
-# Responsible for managing the flow of the game
 class Game
   TOTAL_ROUNDS = 12
 
@@ -44,7 +41,6 @@ class Game
     end
   end
 
-  # rubocop:disable Metrics/MethodLength
   def play
     @code = @maker.make_code
 
@@ -100,7 +96,6 @@ class Game
 
     [maker, breaker]
   end
-  # rubocop:enable Metrics/MethodLength
 
   def receive_total_number_of_games
     number_of_games = nil

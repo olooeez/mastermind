@@ -1,10 +1,7 @@
-# frozen_string_literal: true
-
 require_relative '../lib/guess'
 
 require 'rspec'
 
-# rubocop:disable Metrics/BlockLength
 describe Guess do
   let(:guess) { Guess.new }
 
@@ -37,4 +34,3 @@ describe Guess do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

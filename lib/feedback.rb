@@ -1,12 +1,8 @@
-# frozen_string_literal: true
-
-# Feedback class to generate feedbacks on guesses
 class Feedback
-  # rubocop:disable Metrics/AbcSize
   def self.give_feedback(code, guess)
     feedback_hash = { correct_positions: 0, wrong_positions: 0 }
-    code = code.to_s.split('')
-    guess = guess.to_s.split('')
+    code = code.to_s.chars
+    guess = guess.to_s.chars
 
     correct_positions = guess.each_index.select { |i| guess[i] == code[i] }
     feedback_hash[:correct_positions] += correct_positions.size
@@ -17,7 +13,6 @@ class Feedback
 
     feedback_hash
   end
-  # rubocop:enable Metrics/AbcSize
 
   def self.print_feedback(feedback)
     print '> Feedback: '
