@@ -4,7 +4,7 @@
 
 This is a simple implementation of the classic board game in which the player tries to guess the correct combination numbers chosen by the computer.
 
-# Usage
+## Usage
 
 ### Running the game
 
