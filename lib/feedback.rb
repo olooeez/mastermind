@@ -20,7 +20,7 @@ class Feedback
     feedback[:correct_positions].times { print "\u{1f7e2}" }
     feedback[:wrong_positions].times { print "\u{1f7e0}" }
 
-    puts 'No feedbacks :(' if feedback.values.all?(&:zero?)
+    puts '> No feedbacks :(' if feedback.values.all?(&:zero?)
 
     print "\n"
   end

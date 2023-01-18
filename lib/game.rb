@@ -81,7 +81,7 @@ class Game
 
       break if %w[0 1].include?(choice)
 
-      puts 'Error: Invalid choice (it needs to be 0 or 1).'
+      puts '> Error: Invalid choice (it needs to be 0 or 1).'
     end
 
     choice = choice.to_i
@@ -106,7 +106,7 @@ class Game
 
       break if !number_of_games.zero? && number_of_games.even?
 
-      puts 'Error: Invalid number of games (can\'t be zero and needs to be even).'
+      puts '> Error: Invalid number of games (can\'t be zero and needs to be even).'
     end
 
     number_of_games
