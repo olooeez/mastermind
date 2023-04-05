@@ -1,43 +1,100 @@
-[![CI](https://github.com/olooeez/mastermind/actions/workflows/ci.yml/badge.svg)](https://github.com/olooeez/mastermind/actions/workflows/ci.yml)
+[![test](https://github.com/olooeez/mastermind/actions/workflows/test.yml/badge.svg)](https://github.com/olooeez/mastermind/actions/workflows/test.yml)
 
 # mastermind
 
 This is a simple implementation of the classic board game in which the player tries to guess the correct combination numbers chosen by the computer.
 
+## Demo
+
+![Demo of mastermind](https://raw.githubusercontent.com/olooeez/mastermind/main/img/demo.png)
+
 ## Usage
 
-### Running the game
+Below is how you can use mastermind. Feel free to fork or copy them, but be aware of the limitations that this repository license implies.
 
-To run the Mastermind game, follow these steps:
+You can use the following options to use mastermind:
 
-1. Clone this repository:
+1. [Run in your machine](#run-in-your-machine)
+2. [Run in a Docker container](#run-in-a-docker-container)
+3. [Run in your browser](#run-in-your-browser)
+
+### Run in your machine
+
+#### Clone the repo
+
+To run mastermind, you must clone this repository with the following command:
 
 ```
 git clone https://github.com/olooeez/mastermind.git
 ```
 
-2. Change into the directory:
+#### Enter the cloned repository
+
+After cloning, you must enter the local repository using the following command:
 
 ```
 cd mastermind
 ```
 
-3. Run the game:
+#### Install the dependencies
+
+Install [Ruby](https://www.ruby-lang.org) and [Bundler](https://bundler.io/) on your system and run it with the command bellow:
 
 ```
-ruby bin/mastermind
+bundler install
 ```
 
-Or you can use replit to run the program [right here](https://replit.com/@olooeez/mastermind)
+#### Run the project
 
-### Playing the game
+Finally use the command below to run the project:
 
-To play, just follow the instructions on the command line. The game will ask how many games there will be, to choose between being the code maker or code breaker and then you will create a code or break a code depending on what you chose.
+```
+ruby lib/tic_tac_toe.rb
+```
+
+### Run in a Docker container
+
+#### Clone the repo
+
+To run the program in a docker container, clone the repository to your machine first:
+
+```
+git clone https://github.com/olooeez/mastermind.git
+```
+
+#### Enter the cloned repository
+
+After cloning, you must enter the local repository using the following command:
+
+```
+cd mastermind
+```
+
+#### Build the docker image
+
+Then, use the command below to build the Docker image:
+
+```
+docker build -t olooeez/mastermind:latest .
+```
+
+#### Run the image in a container
+
+Then, to run the image in a container, use the following command:
+
+```
+docker run -it --rm olooeez/mastermind:latest
+```
+
+### Run in your browser
+
+To run the application in your browser, checkout the [Replit](https://replit.com/@olooeez/mastermind) version.
+
 
 ## Contributing
 
-If you would like to contribute to this project, please feel free to open a pull request. All contributions are welcome!
+If you would like to contribute to this project, please feel free to open a merge request. All contributions are welcome!
 
 ## License
 
-This project is licensed under the GPL-3.0 License. See the [LICENSE](https://github.com/olooeez/mastermind/blob/main/LICENSE) file for details.
+This project is licensed under the [MIT](https://github.com/olooeez/mastermind/blob/main/LICENSE) License. See the LICENSE file for details.
