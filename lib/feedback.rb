@@ -17,8 +17,8 @@ class Feedback
   def self.print_feedback(feedback)
     print '> Feedback: '
 
-    feedback[:correct_positions].times { print "\u{1f7e2}" }
-    feedback[:wrong_positions].times { print "\u{1f7e0}" }
+    feedback[:correct_positions].times { print '✔ ' }
+    feedback[:wrong_positions].times { print '✖ ' }
 
     puts '> No feedbacks :(' if feedback.values.all?(&:zero?)
 

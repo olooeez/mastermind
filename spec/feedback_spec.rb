@@ -32,13 +32,13 @@ describe Feedback do
   describe '.print_feedback' do
     context 'when given a feedback hash with correct_positions and wrong_positions set to non-zero values' do
       it 'prints the feedback in the correct format' do
-        expect { Feedback.print_feedback({ correct_positions: 2, wrong_positions: 2 }) }.to output("> Feedback: \u{1f7e2}\u{1f7e2}\u{1f7e0}\u{1f7e0}\n").to_stdout
+        expect { Feedback.print_feedback({ correct_positions: 2, wrong_positions: 2 }) }.to output("> Feedback: ✔ ✔ ✖ ✖ \n").to_stdout
       end
     end
 
     context 'when given a feedback hash with correct_positions and wrong_positions set to 0' do
       it 'prints the correct message' do
-        expect { Feedback.print_feedback({ correct_positions: 0, wrong_positions: 0 }) }.to output("> Feedback: No feedbacks :(\n\n").to_stdout
+        expect { Feedback.print_feedback({ correct_positions: 0, wrong_positions: 0 }) }.to output("> Feedback: > No feedbacks :(\n\n").to_stdout
       end
     end
   end
